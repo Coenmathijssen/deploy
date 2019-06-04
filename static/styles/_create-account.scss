@@ -1,0 +1,207 @@
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'base';
+@import 'reset';
+
+.create-account {
+  .privacy {
+    background-color: white;
+    padding: 30px 15px 5px;
+    position: relative;
+
+    img:first-of-type {
+      width: 20px;
+      position: absolute;
+      left: 50%;
+      top: 5px;
+      transform: translateX(-50%);
+
+    }
+
+    .title-l,
+    .body-s {
+      text-align: center;
+    }
+  }
+
+  img:first-of-type {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .container {
+    padding: 1vh 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $blue;
+
+    .title-xl {
+      color: $white;
+      text-align: center;
+    }
+    p {
+      margin-top: 5px;
+      color: $white;
+      text-align: center;
+    }
+
+    a:first-of-type {
+      margin-top: 5px;
+      color: $white;
+      text-align: center;
+      cursor: pointer;
+
+      span {
+        font-weight: bold;
+        color: $pink;
+      }
+    }
+  }
+
+  form {
+    margin-top: 2vh;
+    input,
+    input[type="text"],
+    textarea {
+      font-size: 0.94em;
+      line-height: 1.2em;
+      font-family: Avenir Book, Arial, sans-serif;
+      border-radius: 16px;
+      width: 100%;
+      display: block;
+      padding: 0.5em;
+      margin-bottom: 1.5vh;
+      border: solid 2px $light-blue;
+      background: none;
+      transition: all 0.2s ease;
+      color: $white;
+    }
+
+    label {
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-bottom: 0;
+      font-family: Avenir Book, Arial, sans-serif;
+      color: $white;
+    }
+
+    .toggle {
+      display: block;
+      width: 100%;
+      margin-bottom: 8vh;
+
+      input.tab {
+        display: none;
+
+        &+label {
+          cursor: pointer;
+          float: left;
+          margin-right: -3px;
+          padding: .5em 1em;
+          position: relative;
+          border: solid 2px $light-blue;
+
+          &.first {
+            border-top-left-radius: 16px;
+            border-bottom-left-radius: 16px;
+          }
+
+          &.last {
+            border-top-right-radius: 16px;
+            border-bottom-right-radius: 16px;
+          }
+
+          &:hover {
+            background-color: $blue;
+            color: $white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+    [type=radio]:checked+label {
+      background-color: $light-blue !important;
+      color: $white;
+      z-index: 1;
+    }
+
+    .toggle.personality {
+      .first,
+      .last {
+        width: 50%;
+        text-align: center;
+      }
+    }
+
+    input[type="submit"] {
+      margin: 5vh 0;
+      font-family: Nexa Bold, Arial, sans-serif;
+      font-size: 1.25em;
+      color: $white;
+      background: $pink;
+      border: none;
+      border-radius: 16px;
+      box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+      transition: all 0.3s;
+
+      &:hover,
+      &:active {
+        box-shadow: none;
+      }
+    }
+
+    input[type="radio"],
+    input[type="checkbox"]{
+      width: auto;
+      display: inline;
+    }
+
+    input:focus,
+    textarea:focus {
+      box-shadow: 0px 1px 5px 1px rgba(0,0,0,0.3);
+      border: solid 2px $pink;
+    }
+
+    label {
+      display: block;
+      font-family: Nexa Bold, Arial, sans-serif;
+      font-size: 1em;
+      line-height: 1.2em;
+      margin-bottom: 3px;
+    }
+
+    select {
+      height: auto;
+      margin: 0;
+      width: 100%;
+      color: $black;
+      font-size: 0.94em;
+      line-height: 1.2em;
+      border-radius: 16px;
+      width: 100%;
+      display: block;
+      padding: 8px;
+      margin-bottom: 3vh;
+      border: solid 2px $light-blue;
+      transition: all 0.2s ease;
+      color: $white;
+      appearance: none;
+      background: url(../images/icons/dropdown-white.svg) 96% / 15% no-repeat;
+      background-size: 27px 20px;
+    }
+  }
+}
+
+.error {
+  display: block;
+  background-color: #E50000;
+  margin-top: 0;
+
+  p.body-m {
+    margin-top: 0;
+  }
+}

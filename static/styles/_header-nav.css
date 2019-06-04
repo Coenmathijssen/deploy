@@ -1,0 +1,27 @@
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em 0 2em;
+  background-color: #147A9A;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 60%; }
+  .header-nav .link {
+    position: relative;
+    opacity: 0.9; }
+    .header-nav .link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      display: block;
+      bottom: -1px;
+      right: -15%;
+      background: #FFFFFF;
+      transition: all .3s ease-in-out; }
+    .header-nav .link:hover {
+      opacity: 1; }
+      .header-nav .link:hover::after {
+        width: 130%;
+        left: -15%; }
+
+/*# sourceMappingURL=_header-nav.css.map */

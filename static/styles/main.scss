@@ -1,0 +1,19 @@
+// Global styling and CSS starting rules import
+@import 'colors';
+@import 'base';
+@import 'reset';
+@import 'fonts';
+@import 'typography';
+
+// Global elements
+@import 'header-nav';
+@import 'footer-nav';
+
+
+// Page specific elements
+@import 'homescreen';
+@import 'messages';
+@import 'matches';
+@import 'profile-overview';
+@import 'profile-detail';
+@import 'create-account';

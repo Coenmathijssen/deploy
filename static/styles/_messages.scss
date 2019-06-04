@@ -1,0 +1,103 @@
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'base';
+@import 'reset';
+@import 'header-nav';
+@import 'footer-nav';
+
+.messages {
+  .header-nav {
+    background-color: $pink;
+  }
+
+  .container {
+    margin: auto 1em;
+    width: calc(100% - 2em);
+
+
+    h1.body-l {
+      position: relative;
+      display: inline-block;
+      padding: 5px 20px 5px 45px;
+      margin: 3vh 0 1.5vh;
+      background-color: $white;
+      border-radius: 36px;
+      box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+
+      &::before {
+        position: absolute;
+        content: '';
+        top: 4px;
+        left: 10px;
+        background-image: url(../images/icons/text-blue.svg);
+        background-size: 26px 22px;
+        background-repeat: no-repeat;
+        height: 22px;
+        width: 26px;
+      }
+    }
+
+    main {
+      article {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        width: 100%;
+        margin: 20px 0;
+
+        > img {
+          grid-column: 1 / span 1;
+          justify-self: center;
+          max-width: 70px;
+          height: auto;
+        }
+
+        div {
+          margin-left: 5px;
+          grid-column: 2 / span 2;
+          justify-self: center;
+        }
+
+        a {
+          grid-column: 4 / span 1;
+          justify-self: center;
+          background-color: $light-blue;
+          border-radius: 100%;
+          padding: 10px;
+          margin: 15px;
+          display: flex;
+          align-items: center;
+          box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+          transition: all .3s;
+
+          &:hover, &:active {
+            background-color: $blue;
+            box-shadow: none;
+          }
+
+          img {
+            justify-content: center;
+            align-items: center;
+          }
+        }
+
+        &:nth-of-type(1),
+        &:nth-of-type(2),
+        &:nth-of-type(3) {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            content: '';
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $orange;
+            top: 0;
+            left: 57px;
+          }
+        }
+      }
+    }
+  }
+}

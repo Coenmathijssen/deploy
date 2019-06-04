@@ -1,0 +1,44 @@
+<% include partials/header %>
+    <link rel="stylesheet" href="styles/_profile-overview.css">
+</head>
+<body class="profile-overview">
+    <% include partials/top-navbar %>
+
+    <div class="container">
+        <div class="succes"><p class="body-m white"><%=succesLogin%></p></div>
+        <div class="succes"><p class="body-m white"><%=succesUpdate%></p></div>
+        <section>
+            <img src="<%= userData.profilePic %>" alt="Your profile picture will be here">
+            <div class="info-overview">
+                <h1 class="title-xl black"><%= userData.firstName %> <%= userData.lastName %></h1>
+                <ul>
+                    <li class="body-m"><%= userData.age %> jr.</li>
+                    <li class="body-m">6 foto's</li>
+                    <li class="body-m">31 matches</li>
+                    <li class="body-m"><%= userData.disability %></li>
+                </ul>
+            </div>
+        </section>
+        <section class="photo-grid">
+            <img src="images/placeholder.png" alt="A silouette of a person">
+            <img src="images/placeholder.png" alt="A silouette of a person">
+            <img src="images/placeholder.png" alt="A silouette of a person">
+            <img src="images/placeholder.png" alt="A silouette of a person">
+            <img src="images/placeholder.png" alt="A silouette of a person">
+            <div class="add">
+                <svg width="48" height="48" xmlns="http://www.w3.org/2000/svg"><path d="M47.142913 21.214254v6.428579c0 1.774556-1.439734 3.214289-3.214289 3.214289H30.000036V44.78571c0 1.774556-1.439734 3.21429-3.21429 3.21429h-6.428579c-1.774556 0-3.214289-1.439734-3.214289-3.21429V30.857122H3.21429C1.439734 30.857122 0 29.417389 0 27.642833v-6.428579c0-1.774556 1.439734-3.21429 3.21429-3.21429h13.928588V4.071376c0-1.774555 1.439733-3.214289 3.214289-3.214289h6.428579c1.774556 0 3.21429 1.439734 3.21429 3.214289v13.928588h13.928588c1.774555 0 3.214289 1.439734 3.214289 3.21429z" fill="#147A9A" fill-rule="nonzero"/></svg>
+        </section>
+
+        <a href="./profile-detail" class="button">Profiel bekijken/bewerken
+            <span><img src="../images/icons/view-profile.svg" alt="Icon for account"></span>
+        </a>
+
+        <a href="#" class="button second">Instellingen bekijken
+            <span><img src="../images/icons/view-settings.svg" alt="Icon for settings"></span>
+        </a>
+
+        <a href="/logout" class="button third">Uitloggen
+            <span><img src="../images/icons/log-out.svg" alt="Icon for signing out"></span>
+        </a>
+    </div>
+<% include partials/footer %>

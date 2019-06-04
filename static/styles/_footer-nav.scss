@@ -1,0 +1,50 @@
+@import 'colors';
+@import 'base';
+@import 'reset';
+
+footer {
+  .navigation {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: $white;
+    position: fixed;
+    bottom: 0;
+    -webkit-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.1);
+    -moz-box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.1);
+    box-shadow: 0px -2px 5px 0px rgba(0,0,0,0.1);
+
+    a {
+      position: relative;
+      padding: 1.5em 0;
+      width: 100%;
+      display: flex;
+      align-content: center;
+      align-items: center;
+      margin: 0 auto;
+
+      &:first-of-type::after,
+      &:nth-of-type(2)::after {
+        position: absolute;
+        content: '';
+        right: 0;
+        height: 50%;
+        width: 1px;
+        background-color: $blue;
+      }
+
+      &:hover,
+      &:active {
+        svg path {
+          fill: $blue;
+          background-color: black;
+        }
+      }
+
+      svg {
+        margin: auto;
+
+      }
+    }
+  }
+}

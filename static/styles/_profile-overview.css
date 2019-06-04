@@ -1,0 +1,883 @@
+@font-face {
+  font-family: 'Nexa Light';
+  src: url("../fonts/NexaLight.eot");
+  src: url("../fonts/NexaLight.eot?#iefix") format("embedded-opentype"), url("../fonts/NexaLight.woff2") format("woff2"), url("../fonts/NexaLight.woff") format("woff"), url("../fonts/NexaLight.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nexa Regular';
+  src: url("../fonts/Nexa-Regular.eot");
+  src: url("../fonts/Nexa-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Nexa-Regular.woff2") format("woff2"), url("../fonts/Nexa-Regular.woff") format("woff"), url("../fonts/Nexa-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; }
+@font-face {
+  font-family: 'Nexa';
+  src: url("../fonts/Nexa-Bold.eot");
+  src: url("../fonts/Nexa-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Nexa-Bold.woff2") format("woff2"), url("../fonts/Nexa-Bold.woff") format("woff"), url("../fonts/Nexa-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal; }
+@font-face {
+  font-family: 'Avenir Book';
+  src: url("../fonts/AvenirLTStd-Book.eot");
+  src: url("../fonts/AvenirLTStd-Book.eot?#iefix") format("embedded-opentype"), url("../fonts/AvenirLTStd-Book.woff2") format("woff2"), url("../fonts/AvenirLTStd-Book.woff") format("woff"), url("../fonts/AvenirLTStd-Book.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal; }
+.title-xl {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: 900; }
+  .title-xl.black {
+    color: #0E1111; }
+  .title-xl.white {
+    color: #FFFFFF; }
+  .title-xl.blue {
+    color: #147A9A; }
+
+.title-l {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.25em;
+  font-weight: 900; }
+  .title-l.black {
+    color: #0E1111; }
+  .title-l.white {
+    color: #FFFFFF; }
+  .title-l.blue {
+    color: #147A9A; }
+
+.title-m {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 900; }
+  .title-m.black {
+    color: #0E1111; }
+  .title-m.white {
+    color: #FFFFFF; }
+  .title-m.blue {
+    color: #147A9A; }
+
+.title-s {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 0.94em;
+  line-height: 1.2em;
+  font-weight: 900; }
+  .title-s.black {
+    color: #0E1111; }
+  .title-s.white {
+    color: #FFFFFF; }
+  .title-s.blue {
+    color: #147A9A; }
+
+.body-l {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.2em;
+  color: #0E1111; }
+
+.body-m {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 0.94em;
+  line-height: 1.2em;
+  color: #0E1111; }
+
+.body-s {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 0.625em;
+  line-height: 1.2em;
+  color: #0E1111; }
+
+/* ==========================================================================
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: calc(100vh + 80px) !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  background-color: #EDECE9 !important; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: inherit;
+  word-wrap: break-word; }
+
+a:hover,
+a:active {
+  color: #000;
+  cursor: pointer; }
+
+a img {
+  border: none; }
+
+img {
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+i,
+em {
+  font-style: italic;
+  line-height: inherit; }
+
+b,
+strong,
+.bold {
+  font-weight: 700;
+  line-height: inherit; }
+
+/* Standard heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  line-height: 0; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 16px; }
+
+/* Standard paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Standard form styles */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="submit"],
+textarea,
+button {
+  font-family: inherit;
+  fonts-size: 0.8em;
+  border-radius: 0;
+  outline: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+
+textarea {
+  overflow: auto;
+  /* Remove default vertical scrollbar in IE 8/9 */
+  vertical-align: top;
+  /* Improve readability and alignment in all browsers */
+  resize: none; }
+
+/* blockquote */
+blockquote {
+  padding-left: 50px;
+  margin-bottom: 1.25em; }
+
+/* Placeholder texts */
+::-webkit-input-placeholder {
+  color: #999; }
+
+:-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+:-ms-input-placeholder {
+  color: #999; }
+
+/* Clear floats by wrapping this around the parent element */
+.group::before,
+.group::after {
+  content: "";
+  display: table; }
+
+.group::after {
+  clear: both; }
+
+/* Standard section styles */
+main,
+section,
+footer {
+  position: relative;
+  z-index: 0;
+  float: left;
+  width: 100%; }
+
+.inner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%; }
+
+/* Selection */
+::-moz-selection {
+  /* Firefox */
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+/* ==========================================================================
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: calc(100vh + 80px) !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em 0 2em;
+  background-color: #147A9A;
+  border-bottom-left-radius: 40%;
+  border-bottom-right-radius: 60%; }
+  .header-nav .link {
+    position: relative;
+    opacity: 0.9; }
+    .header-nav .link::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 3px;
+      display: block;
+      bottom: -1px;
+      right: -15%;
+      background: #FFFFFF;
+      transition: all .3s ease-in-out; }
+    .header-nav .link:hover {
+      opacity: 1; }
+      .header-nav .link:hover::after {
+        width: 130%;
+        left: -15%; }
+
+/* ==========================================================================
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: calc(100vh + 80px) !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  background-color: #EDECE9 !important; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: inherit;
+  word-wrap: break-word; }
+
+a:hover,
+a:active {
+  color: #000;
+  cursor: pointer; }
+
+a img {
+  border: none; }
+
+img {
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+i,
+em {
+  font-style: italic;
+  line-height: inherit; }
+
+b,
+strong,
+.bold {
+  font-weight: 700;
+  line-height: inherit; }
+
+/* Standard heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  line-height: 0; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 16px; }
+
+/* Standard paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Standard form styles */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="submit"],
+textarea,
+button {
+  font-family: inherit;
+  fonts-size: 0.8em;
+  border-radius: 0;
+  outline: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+
+textarea {
+  overflow: auto;
+  /* Remove default vertical scrollbar in IE 8/9 */
+  vertical-align: top;
+  /* Improve readability and alignment in all browsers */
+  resize: none; }
+
+/* blockquote */
+blockquote {
+  padding-left: 50px;
+  margin-bottom: 1.25em; }
+
+/* Placeholder texts */
+::-webkit-input-placeholder {
+  color: #999; }
+
+:-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+:-ms-input-placeholder {
+  color: #999; }
+
+/* Clear floats by wrapping this around the parent element */
+.group::before,
+.group::after {
+  content: "";
+  display: table; }
+
+.group::after {
+  clear: both; }
+
+/* Standard section styles */
+main,
+section,
+footer {
+  position: relative;
+  z-index: 0;
+  float: left;
+  width: 100%; }
+
+.inner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%; }
+
+/* Selection */
+::-moz-selection {
+  /* Firefox */
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+/* ==========================================================================
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: calc(100vh + 80px) !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+footer .navigation {
+  display: flex;
+  justify-content: space-evenly;
+  width: 100%;
+  background-color: #FFFFFF;
+  position: fixed;
+  bottom: 0;
+  -webkit-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px -2px 5px 0px rgba(0, 0, 0, 0.1); }
+  footer .navigation a {
+    position: relative;
+    padding: 1.5em 0;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    margin: 0 auto; }
+    footer .navigation a:first-of-type::after, footer .navigation a:nth-of-type(2)::after {
+      position: absolute;
+      content: '';
+      right: 0;
+      height: 50%;
+      width: 1px;
+      background-color: #147A9A; }
+    footer .navigation a:hover svg path, footer .navigation a:active svg path {
+      fill: #147A9A;
+      background-color: black; }
+    footer .navigation a svg {
+      margin: auto; }
+
+.profile-overview .header-nav {
+  background-color: #F6AB2A; }
+.profile-overview .container {
+  margin: 0 1em;
+  width: calc(100% - 2em); }
+.profile-overview section:first-of-type {
+  display: flex;
+  padding: 5vh 0; }
+  .profile-overview section:first-of-type img {
+    width: 150px;
+    height: 134px; }
+  .profile-overview section:first-of-type .info-overview {
+    margin-left: 1em; }
+    .profile-overview section:first-of-type .info-overview ul li:nth-of-type(1) {
+      position: relative;
+      margin: 10px 0 10px 30px; }
+      .profile-overview section:first-of-type .info-overview ul li:nth-of-type(1)::before {
+        position: absolute;
+        content: '';
+        left: -30px;
+        top: -4px;
+        background-image: url("../images/icons/age.svg");
+        background-repeat: no-repeat;
+        background-size: 21px 19px;
+        height: 19px;
+        width: 21px; }
+    .profile-overview section:first-of-type .info-overview ul li:nth-of-type(2) {
+      position: relative;
+      margin: 10px 0 10px 30px; }
+      .profile-overview section:first-of-type .info-overview ul li:nth-of-type(2)::before {
+        position: absolute;
+        content: '';
+        left: -30px;
+        top: -4px;
+        background-image: url("../images/icons/photos.svg");
+        background-repeat: no-repeat;
+        background-size: 23px 20px;
+        height: 20px;
+        width: 23px; }
+    .profile-overview section:first-of-type .info-overview ul li:nth-of-type(3) {
+      position: relative;
+      margin: 10px 0 10px 30px; }
+      .profile-overview section:first-of-type .info-overview ul li:nth-of-type(3)::before {
+        position: absolute;
+        content: '';
+        left: -30px;
+        top: -4px;
+        background-image: url("../images/icons/matches.svg");
+        background-repeat: no-repeat;
+        background-size: 24px 20px;
+        height: 20px;
+        width: 24px; }
+    .profile-overview section:first-of-type .info-overview ul li:nth-of-type(4) {
+      position: relative;
+      margin: 10px 0 10px 30px; }
+      .profile-overview section:first-of-type .info-overview ul li:nth-of-type(4)::before {
+        position: absolute;
+        content: '';
+        left: -30px;
+        top: -4px;
+        background-image: url("../images/icons/disability.svg");
+        background-repeat: no-repeat;
+        background-size: 23px 20px;
+        height: 20px;
+        width: 23px; }
+.profile-overview section.photo-grid {
+  margin-bottom: 5vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 1em;
+  justify-items: center; }
+  .profile-overview section.photo-grid > img {
+    width: 100%; }
+.profile-overview .add {
+  position: relative;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 16px;
+  transition: all .3s; }
+  .profile-overview .add svg {
+    width: 50%;
+    height: 50%;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .profile-overview .add:hover, .profile-overview .add:active {
+    background-color: #147A9A; }
+    .profile-overview .add:hover svg path, .profile-overview .add:active svg path {
+      fill: #FFFFFF; }
+.profile-overview .button {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+  padding: 7px 20px;
+  margin: 10px 0;
+  border: solid 4px #147A9A;
+  border-radius: 16px;
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  color: #147A9A;
+  transition: all .3s; }
+  .profile-overview .button:hover {
+    background-color: #147A9A;
+    color: #FFFFFF; }
+  .profile-overview .button span {
+    position: absolute;
+    right: -3px;
+    top: -2px;
+    height: 110%;
+    width: 50px;
+    background-color: #147A9A;
+    border-radius: 16px;
+    padding-top: 3px; }
+    .profile-overview .button span img {
+      width: 25px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      height: auto; }
+  .profile-overview .button.second {
+    border: solid 4px #5BB8B8;
+    color: #5BB8B8; }
+    .profile-overview .button.second:hover {
+      background-color: #5BB8B8;
+      color: #FFFFFF; }
+    .profile-overview .button.second span {
+      padding-top: 7px;
+      background-color: #5BB8B8; }
+  .profile-overview .button.third {
+    border: solid 4px #F6AB2A;
+    color: #F6AB2A; }
+    .profile-overview .button.third:hover {
+      background-color: #F6AB2A;
+      color: #FFFFFF; }
+    .profile-overview .button.third span {
+      padding-top: 11px;
+      background-color: #F6AB2A; }
+
+.succes {
+  display: block;
+  width: calc(100% -2em);
+  background-color: #01873a;
+  margin-top: 0; }
+  .succes p.body-m {
+    margin-top: 0;
+    text-align: center;
+    color: #FFFFFF; }
+
+/*# sourceMappingURL=_profile-overview.css.map */

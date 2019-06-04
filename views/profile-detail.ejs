@@ -1,0 +1,66 @@
+<% include partials/header %>
+    <link rel="stylesheet" href="styles/_profile-detail.css">
+</head>
+<body class="profile-detail">
+    <% include partials/top-navbar %>
+
+    <div class="container">
+        <nav>
+            <a href="/profile-overview" class="title-m"><span><img src="../images/icons/back.svg" alt="A back button for returning to the previous page"></span>Vorige <br> pagina</a>
+            <a href="/delete" class="title-m"><span><img src="../images/icons/trash.svg" alt="A back button for returning to the previous page"></span>Account <br> verwijderen</a>
+        </nav>
+        <div class="error"><p class="body-m white"><%=failedDelete%></p></div>
+
+        <main>
+            <form method="POST" action="/update">
+                <label for="id">id</label>
+                <input id="id" type="text" name="id" value="<%= userData._id %>" readonly>
+
+                <label for="firstName">Voornaam</label>
+                <input id="firstName" type="text" name="firstName" placeholder="<%= userData.firstName %>">
+
+                <label for="lastName">Achternaam</label>
+                <input id="lastName" type="text" name="lastName" placeholder="<%= userData.lastName %>">
+
+                <label for="email">Email</label>
+                <input id="email" type="text" name="email" placeholder="<%= userData.email %>">
+
+                <label for="password">Wachtwoord</label>
+                <input id="password" type="text" name="password" placeholder="<%= userData.password %>">
+
+                <div class="toggle">
+                    <label for="toggle">Ik ben een</label>
+                    <input id="boy" type="radio" class="tab" name="tab" value="man">
+                    <label class="label first" for="boy" class="radio-inline">Man</label>
+                    <input id="girl" type="radio" class="tab" name="tab" value="vrouw">
+                    <label class="label" for="girl" class="radio-inline">Vrouw</label>
+                    <input id="both" type="radio" class="tab" name="tab" value="beide">
+                    <label class="label last" for="both" class="radio-inline">Beide</label>
+                </div>
+
+                <label for="age">Ik ben ... jaar</label>
+                <input id="age" type="text" name="age" placeholder="<%= userData.age %>">
+
+                <label for="address">Ik woon in</label>
+                <input id="adress" type="text" name="address" placeholder="<%= userData.address %>">
+
+                <label for="select">Ik heb de volgende beperking</label>
+                <select id="select" name="disability">
+                    <option value="autism">Autisme</option>
+                    <option value="down">Syndroom van down</option>
+                    <option value="fysical-arm">Fysieke beperkingen in arm(en)</option>
+                    <option value="fysical-leg">Fysieke beperkingen in be(e)n(en)</option>
+                    <option value="manic">Manisch</option>
+                </select>
+
+                <label for="hobbies">Mijn hobby's zijn</label>
+                <textarea id="hobbies" name="hobbies" rows="5" placeholder="<%= userData.hobbies %>"></textarea>
+
+                <label for="about">Over mijzelf</label>
+                <textarea id="about" name="about" rows="5" placeholder="<%= userData.about %>"></textarea>
+
+                <input type="submit" value="Wijzigingen opslaan">
+            </form>
+        </main>
+    </div>
+<% include partials/footer %>

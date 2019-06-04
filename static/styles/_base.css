@@ -1,0 +1,249 @@
+/* ==========================================================================
+   http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+   ========================================================================== */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1;
+  height: calc(100vh + 80px) !important; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+html,
+body {
+  background-color: #EDECE9 !important; }
+
+html {
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+.error {
+  display: block;
+  margin: 0 1em;
+  width: calc(100% -2em);
+  background-color: red; }
+
+body {
+  background: #fff;
+  color: #000;
+  font-family: 'Arial', sans-serif;
+  font-size: 1em;
+  font-weight: 400;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%; }
+
+a {
+  color: #000;
+  text-decoration: none;
+  line-height: inherit;
+  word-wrap: break-word; }
+
+a:hover,
+a:active {
+  color: #000;
+  cursor: pointer; }
+
+a img {
+  border: none; }
+
+img {
+  height: auto;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic; }
+
+i,
+em {
+  font-style: italic;
+  line-height: inherit; }
+
+b,
+strong,
+.bold {
+  font-weight: 700;
+  line-height: inherit; }
+
+/* Standard heading styles */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 12px;
+  font-weight: 400;
+  line-height: 1.5em;
+  text-rendering: optimizeLegibility; }
+
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 60%;
+  line-height: 0; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 24px; }
+
+h3 {
+  font-size: 16px; }
+
+h4 {
+  font-size: 16px; }
+
+h5 {
+  font-size: 16px; }
+
+h6 {
+  font-size: 16px; }
+
+/* Standard paragraph styles */
+p {
+  font-family: inherit;
+  font-weight: normal;
+  text-rendering: optimizeLegibility; }
+
+/* Standard form styles */
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="tel"],
+input[type="password"],
+input[type="number"],
+input[type="search"],
+input[type="date"],
+input[type="time"],
+input[type="datetime-local"],
+input[type="month"],
+input[type="submit"],
+textarea,
+button {
+  font-family: inherit;
+  fonts-size: 0.8em;
+  border-radius: 0;
+  outline: none;
+  -webkit-border-radius: 0;
+  -webkit-appearance: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+input[type="submit"],
+button {
+  cursor: pointer; }
+
+textarea {
+  overflow: auto;
+  /* Remove default vertical scrollbar in IE 8/9 */
+  vertical-align: top;
+  /* Improve readability and alignment in all browsers */
+  resize: none; }
+
+/* blockquote */
+blockquote {
+  padding-left: 50px;
+  margin-bottom: 1.25em; }
+
+/* Placeholder texts */
+::-webkit-input-placeholder {
+  color: #999; }
+
+:-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+::-moz-placeholder {
+  color: #000;
+  opacity: 1;
+  /* Removes placeholder transparency in Firefox */ }
+
+:-ms-input-placeholder {
+  color: #999; }
+
+/* Clear floats by wrapping this around the parent element */
+.group::before,
+.group::after {
+  content: "";
+  display: table; }
+
+.group::after {
+  clear: both; }
+
+/* Standard section styles */
+main,
+section,
+footer {
+  position: relative;
+  z-index: 0;
+  float: left;
+  width: 100%; }
+
+.inner {
+  position: relative;
+  float: left;
+  width: 100%;
+  height: 100%; }
+
+/* Selection */
+::-moz-selection {
+  /* Firefox */
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+::selection {
+  background: #000;
+  color: #fff;
+  text-shadow: none; }
+
+/*# sourceMappingURL=_base.css.map */

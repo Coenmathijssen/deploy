@@ -1,0 +1,202 @@
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'base';
+@import 'reset';
+@import 'header-nav';
+@import 'footer-nav';
+
+.homescreen {
+  main {
+    margin: auto 1em;
+    width: calc(100% - 2em);
+
+    .top-info {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 3vh;
+
+      .name {
+        .title-s.black {
+          font-family: Nexa Light, Arial, sans-serif;
+        }
+      }
+
+      .info {
+        text-align: right;
+
+        .body-s {
+          position: relative;
+
+          &::before {
+            position: absolute;
+            display: inline-block;
+            left: 15px;
+            top: -2px;
+            content: '';
+            background-image: url("../images/icons/location.svg");
+            background-size: 8px 12px;
+            background-repeat: no-repeat;
+            height: 14px;
+            width: 10px;
+          }
+        }
+      }
+    }
+
+    img {
+      width: 100%;
+    }
+
+    article {
+      position: relative;
+      padding: 1em 1em 1em;
+      transform: translateY(-50px);
+      background-color: $white;
+      border-radius: 16px;
+      box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+
+      &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        right: 0;
+        margin-left: auto;
+        margin-right: auto;
+        width: 0;
+        height: 0;
+        border-top: 40px solid $white;
+        border-left: 30px solid transparent;
+        border-right: 30px solid transparent;
+      }
+
+      .about {
+        display: flex;
+        justify-content: space-between;
+
+        .first-list {
+          .tv {
+            position: relative;
+            margin-left: 30px;
+
+            &::before {
+              position: absolute;
+              display: inline-block;
+              left: -30px;
+              top: 0;
+              content: '';
+              background-image: url("../images/icons/tv.svg");
+              background-size: 19px 14px;
+              background-repeat: no-repeat;
+              height: 14px;
+              width: 19px;
+              margin-bottom: -2px;
+            }
+          }
+
+          .music {
+            position: relative;
+            margin-left: 30px;
+
+            &::before {
+              position: absolute;
+              display: inline-block;
+              left: -27px;
+              top: 0;
+              content: '';
+              background-image: url("../images/icons/music.svg");
+              background-size: 12px 17px;
+              background-repeat: no-repeat;
+              height: 17px;
+              width: 12px;
+            }
+          }
+
+          .shopping {
+            position: relative;
+            margin-left: 30px;
+
+            &::before {
+              position: absolute;
+              display: inline-block;
+              left: -30px;
+              top: 0;
+              content: '';
+              background-image: url("../images/icons/shopping.svg");
+              background-size: 18px 13px;
+              background-repeat: no-repeat;
+              height: 13px;
+              width: 18px;
+            }
+          }
+
+        .second-list {
+          ul {
+            list-style-type: disc;
+            list-style-position: inside;
+          }
+        }
+      }
+      }
+
+       .title-s {
+        padding: 20px 0 0;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .profiles-nav {
+      display: flex;
+      justify-content: space-between;
+
+      a {
+        padding: 1.7em;
+        border-radius: 50%;
+        box-shadow: 0px 2px 10px 1px rgba(0,0,0,0.5);
+        transition: all .3s;
+
+        &:hover {
+          box-shadow: none;
+        }
+
+        &:first-of-type {
+          background-color: $light-blue;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 40px;
+            height: auto;
+          }
+        }
+
+        &:nth-of-type(2){
+          background-color: $pink;
+          display: flex;
+          align-items: center;
+
+          img {
+            width: 40px;
+            height: auto;
+            overflow: visible;
+          }
+        }
+
+        &:last-of-type {
+          min-width: 91px;
+          background-color: $orange;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          img {
+            width: 30px;
+            height: auto;
+          }
+        }
+      }
+    }
+  }
+}

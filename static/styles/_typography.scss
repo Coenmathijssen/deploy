@@ -1,0 +1,96 @@
+.title-xl {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1.25em;
+  line-height: 1.2em;
+  font-weight: 900;
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $blue;
+  }
+}
+
+.title-l {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.25em;
+    font-weight: 900;
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $blue;
+  }
+}
+
+.title-m {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 1em;
+  line-height: 1.2em;
+  font-weight: 900;
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $blue;
+  }
+}
+
+.title-s {
+  font-family: Nexa Bold, Arial, sans-serif;
+  font-size: 0.94em;
+  line-height: 1.2em;
+  font-weight: 900;
+
+  &.black {
+    color: $black;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &.blue {
+    color: $blue;
+  }
+}
+
+.body-l {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 1.125em;
+  line-height: 1.2em;
+  color: $black;
+}
+
+.body-m {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 0.94em;
+  line-height: 1.2em;
+  color: $black;
+}
+
+.body-s {
+  font-family: Avenir Book, Arial, sans-serif;
+  font-size: 0.625em;
+  line-height: 1.2em;
+  color: $black;
+}

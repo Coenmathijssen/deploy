@@ -1,0 +1,36 @@
+@import 'colors';
+
+.header-nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 1.5em 0 2em;
+  background-color: $blue;
+  border-bottom-left-radius:40%;
+  border-bottom-right-radius:60%;
+
+  .link {
+  position: relative;
+  opacity: 0.9;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    display: block;
+    bottom: -1px;
+    right: -15%;
+    background: $white;
+    transition: all .3s ease-in-out;
+  }
+
+  &:hover {
+    opacity: 1;
+
+    &::after {
+      width: 130%;
+      left: -15%;
+    }
+  }
+}
+}

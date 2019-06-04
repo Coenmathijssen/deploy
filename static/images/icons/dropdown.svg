@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="21px" height="13px" viewBox="0 0 21 13" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 54.1 (76490) - https://sketchapp.com -->
+    <title></title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M356.376133,425.838152 L349.857152,432.357133 L356.376133,438.876114 C356.683053,439.183034 356.683053,439.674106 356.376133,439.981026 L354.338184,442.018974 C354.031264,442.325894 353.540192,442.325894 353.233272,442.018974 L344.123886,432.909589 C343.816966,432.602669 343.816966,432.111597 344.123886,431.804677 L353.233272,422.695291 C353.540192,422.388371 354.031264,422.388371 354.338184,422.695291 L356.376133,424.73324 C356.683053,425.04016 356.683053,425.531232 356.376133,425.838152 Z" id="path-1"></path>
+    </defs>
+    <g id="Homescreen---Discover" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Account---Ik-ben---Detail" transform="translate(-340.000000, -426.000000)" fill-rule="nonzero">
+            <g id="" transform="translate(350.250010, 432.357133) rotate(-90.000000) translate(-350.250010, -432.357133) ">
+                <use fill="#000000" xlink:href="#path-1"></use>
+                <use fill="#147A9A" xlink:href="#path-1"></use>
+            </g>
+        </g>
+    </g>
+</svg>

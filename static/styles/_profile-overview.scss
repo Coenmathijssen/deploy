@@ -1,0 +1,223 @@
+@import 'colors';
+@import 'fonts';
+@import 'typography';
+@import 'base';
+@import 'reset';
+@import 'header-nav';
+@import 'footer-nav';
+
+.profile-overview {
+  .header-nav {
+    background-color: $orange;
+  }
+
+  .container {
+    margin: 0 1em;
+    width: calc(100% - 2em);
+  }
+
+  section:first-of-type {
+    display: flex;
+    padding: 5vh 0;
+
+    img {
+      width: 150px;
+      height: 134px;
+    }
+
+    .info-overview {
+      margin-left: 1em;
+
+      ul {
+        li:nth-of-type(1) {
+          position: relative;
+          margin: 10px 0 10px 30px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            left: -30px;
+            top: -4px;
+            background-image: url("../images/icons/age.svg");
+            background-repeat: no-repeat;
+            background-size: 21px 19px;
+            height: 19px;
+            width: 21px;
+          }
+        }
+
+        li:nth-of-type(2) {
+          position: relative;
+          margin: 10px 0 10px 30px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            left: -30px;
+            top: -4px;
+            background-image: url("../images/icons/photos.svg");
+            background-repeat: no-repeat;
+            background-size: 23px 20px;
+            height: 20px;
+            width: 23px;
+          }
+        }
+
+        li:nth-of-type(3) {
+          position: relative;
+          margin: 10px 0 10px 30px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            left: -30px;
+            top: -4px;
+            background-image: url("../images/icons/matches.svg");
+            background-repeat: no-repeat;
+            background-size: 24px 20px;
+            height: 20px;
+            width: 24px;
+          }
+        }
+
+        li:nth-of-type(4) {
+          position: relative;
+          margin: 10px 0 10px 30px;
+
+          &::before {
+            position: absolute;
+            content: '';
+            left: -30px;
+            top: -4px;
+            background-image: url("../images/icons/disability.svg");
+            background-repeat: no-repeat;
+            background-size: 23px 20px;
+            height: 20px;
+            width: 23px;
+          }
+        }
+      }
+    }
+  }
+
+  section.photo-grid {
+    margin-bottom: 5vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 1em;
+    justify-items: center;
+
+   & > img {
+      width: 100%;
+    }
+  }
+
+
+  .add {
+    position: relative;
+    width: 100%;
+    background-color: $white;
+    border-radius: 16px;
+    transition: all .3s;
+
+    svg {
+      width: 50%;
+      height: 50%;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+
+    &:hover,
+    &:active {
+      background-color: $blue;
+
+      svg path {
+        fill: $white;
+      }
+    }
+  }
+
+  .button {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding: 7px 20px;
+    margin: 10px 0;
+    border: solid 4px $blue;
+    border-radius: 16px;
+    font-family: Nexa Bold, Arial, sans-serif;
+    font-size: 1.25em;
+    line-height: 1.2em;
+    color: $blue;
+    transition: all .3s;
+
+    &:hover {
+      background-color: $blue;
+      color: $white;
+    }
+
+    span {
+      position: absolute;
+      right: -3px;
+      top: -2px;
+      height: 110%;
+      width: 50px;
+      background-color: $blue;
+      border-radius: 16px;
+      padding-top: 3px;
+
+      img {
+        width: 25px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        height: auto;
+      }
+    }
+
+    &.second {
+      border: solid 4px $light-blue;
+      color: $light-blue;
+
+      &:hover {
+        background-color: $light-blue;
+        color: $white;
+      }
+
+      span {
+        padding-top: 7px;
+        background-color: $light-blue;
+      }
+    }
+
+    &.third {
+      border: solid 4px $orange;
+      color: $orange;
+
+      &:hover {
+        background-color: $orange;
+        color: $white;
+      }
+
+      span {
+        padding-top: 11px;
+        background-color: $orange;
+      }
+    }
+  }
+}
+
+.succes {
+  display: block;
+  background-color: #01873a;
+  margin-top: 0;
+
+  p.body-m {
+    margin-top: 0;
+    text-align: center;
+    color: $white;
+  }
+}
